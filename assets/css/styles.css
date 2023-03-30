@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Code:wght@500&family=Raleway:wght@800&display=swap');
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #8fb996;
-    --font-family: "Roboto", Fira Code;
+    --secondary-color: #254e70;
+    --font-family: "Roboto", Raleway;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;   
     --bg-color: #1f2122;
-    --secondary-bg-color: ##fcfcfc;
+    --secondary-bg-color: #fcfcfc;
     --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;
+    --secondary-shadow: #254e70;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: #3d7fb4;
 }
 
 body {
@@ -69,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: #3d7fb4;
     border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -82,13 +82,14 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 10rem;
     margin: auto;
 }
 
 .front img {
-    height: 55rem;
-    width: 40rem;
+    height: 40rem;
+    width: 30rem;
+    margin: 3rem;
 }
 
 .bio {
@@ -107,17 +108,108 @@ nav ul {
 }
 
 .more-about {
-    background-color: var(--bg-color);
+    background-color: var(--secondary-bg-color);
     padding: 1rem 6rem;
-    color: var(--primary-color);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
+    text-decoration: underline;
 }
 
 .more-about p {
     line-height: var(--line-height);
     padding: 0.3rem;
+}
+
+.extra-bio {
+  display: flex;
+  align-items: center;
+}
+
+.left-about img {
+    flex: 1;
+    width: 20rem;
+    height: 22.5rem;
+    margin: 5rem;
+}
+
+.right-about {
+    margin: 5rem;
+    margin-top:0.5rem;
+
+}
+
+
+
+.skills {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.skills h2 {
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px #254e70;
+    padding: 20px;
+    margin: 10px;
+}
+
+.projects {
+    background-color: var(--secondary-bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+}
+
+.project-pic {
+    width: 65%;
+    height: 70%;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-container {
+    text-align: center;
+    width: 35rem;
+    padding: 1rem;
+}
+
+.project-details {
+    margin-top: 1rem;
+}
+
+.project-title {
+    margin-top: 1rem;
+}
+
+.project-link {
+    color: var(--secondary-color);
 }
