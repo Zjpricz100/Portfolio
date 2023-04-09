@@ -90,6 +90,14 @@ nav ul {
     gap: 2rem;
 }
 
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
 .front {
     display: flex;
     align-items: center;
@@ -299,7 +307,111 @@ nav ul {
     color: var(--primary-color);
     cursor: pointer;
   }
-  
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+
+  .socicon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  footer {
+    background-color: var(--secondary-bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+    
+  /* if the screen size is 720 px or less, run the below styles */
+  @media screen and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .front {
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .front img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .front h2 {
+        text-align: center;   
+    }
+
+    .front p {
+        font-size: small;
+        text-align: center;
+    }
+
+    .more-about {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+      }
+    
+    .left-about {
+        display: none;
+    }
+    
+    .right-about {
+        height: 20rem;
+        width: 10rem;
+    }
+
+    .right-about p {
+        font-size: small;
+    }
+
+    .bio {
+        width: 20rem;
+        text-align: center;
+    }
+
+    .icon {
+        width: 4rem;
+        height: 3.75rem;
+      }
+
+    .skills {
+        margin-top: 20rem;
+        justify-content: center;
+    }
+    
+  }
   
   
   
